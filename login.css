@@ -1,0 +1,73 @@
+
+body {
+   background-image: url(1712651.jpg);
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+ 
+  color: #333;
+}
+
+
+#login-box, #register-box {
+  width: 300px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+  text-align: center;
+  color: lch(54.93% 98.33 322.5);
+  margin-top: 30px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: hwb(279 0% 47%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: hwb(297 0% 70%);
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+}
+
+a {
+  color: hwb(268 3% 32%);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
