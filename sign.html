@@ -1,0 +1,30 @@
+<p>sign works!</p>
+<div class="auth-wrapper">
+  <h2> 'Create Your Signing Profile' </h2>
+
+  
+  <form>
+    <div class="form-group">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" ngModel required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" ngModel required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">PassWord</label>
+      <input type="password" id="password" name="password" ngModel required>
+    </div>
+
+    <button (click)="onSignUpSuccess()">Create Profile</button>
+  </form>
+
+  <p class="LoginLink">
+    Already have an account ?   </p>
+    <button (click)="redirectToLogin()">Login !</button>
+
+  
+</div>
