@@ -1,0 +1,104 @@
+<p>admin-dashboard works!</p>
+
+<div class="dashboard-container">
+
+  <header class="navbar-area">
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a routerLink="/dashboard">
+          <i class="fas fa-book"></i> **Exam System Dashboard**
+        </a>
+      </div>
+     
+      <div class="user-info">
+        <span>Welcome, User!</span>
+      </div>
+    </nav>
+  </header>
+  <div class="sidebar">
+  <ul class="sidebar-links">
+    <nav class="mt-6">
+      <li><a href="/admin/dashboard" class="block px-4 py-2 hover:bg-blue-100">Dashboard</a></li>
+      <li><a href="/subjects" class="block px-4 py-2 hover:bg-blue-100">Manage Subjects</a></li>
+      <li><a href="/questions" class="block px-4 py-2 hover:bg-blue-100">Manage Questions</a></li>
+      <li><a href="/users" class="block px-4 py-2 hover:bg-blue-100">Manage Users</a></li>
+      <li><a href="/exams" class="block px-4 py-2 hover:bg-blue-100">Manage Exams</a></li>
+      <li><a href="/analytics" class="block px-4 py-2 hover:bg-blue-100">Analytics</a></li>
+    </nav>
+  </ul>
+</div>
+  <div class="main-content-area">
+    <h1 class="dashboard-title">
+      <i class="fas fa-chart-line"></i> Dashboard Overview
+    </h1>
+    <hr>
+
+    <div class="content-grid">
+     <!-- ✅ Student List Section -->
+      <section class="student-list-card card">
+        <div class="student-list-component">
+          <h2><i class="fas fa-users"></i> Student List</h2>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let student of students">
+                <td>{{ student.id }}</td>
+                <td>{{ student.name }}</td>
+                <td>{{ student.email }}</td>
+                <td>{{ student.course }}</td>
+                <td>
+                  <button class="btn btn-primary btn-sm">Delete<i class="fas fa-edit"></i></button>
+                  <button class="btn btn-danger btn-sm">Update<i class="fas fa-trash"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- ✅ End Student List Section -->
+            <!-- ✅ Statistics / Counts Section -->
+      <section class="stats-card card">
+        <div class="stats-component">
+          <h2><i class="fas fa-chart-pie"></i> Dashboard Statistics</h2>
+
+          <div class="stats-grid">
+            <div class="stat-box">
+              <i class="fas fa-user-graduate"></i>
+              <h3>{{ totalStudents }}</h3>
+              <p>Total Students</p>
+            </div>
+
+            <div class="stat-box">
+              <i class="fas fa-file-alt"></i>
+              <h3>{{ totalExams }}</h3>
+              <p>Total Exams</p>
+            </div>
+
+            <div class="stat-box">
+              <i class="fas fa-book"></i>
+              <h3>{{ totalSubjects }}</h3>
+              <p>Total Subjects</p>
+            </div>
+
+            <div class="stat-box">
+              <i class="fas fa-check-circle"></i>
+              <h3>{{ completedExams }}</h3>
+              <p>Completed Exams</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ✅ End Statistics Section -->
+
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,139 @@
+/* 🌟 Container */
+.container {
+  max-width: 750px;
+  margin: 60px auto;
+  background: linear-gradient(145deg, #ffffff, #f3f4f6);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  padding: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* 🧠 Title */
+h1 {
+  text-align: center;
+  color: #1d4ed8;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
+}
+
+/* ✍️ Form */
+form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px 14px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background: #f9fafb;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.25);
+}
+
+/* 🟦 Add Button */
+button[type="submit"] {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.25s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(135deg, #1e3a8a, #1d4ed8);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(29, 78, 216, 0.25);
+}
+
+/* 🧾 List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 💡 Subject Card */
+li {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 14px 18px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  background: #e0f2fe;
+  transform: scale(1.02);
+  border-color: #93c5fd;
+}
+
+/* 📘 Subject Name */
+li span {
+  font-size: 17px;
+  color: #0f172a;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* ❌ Delete Button */
+li button {
+  color: #dc2626;
+  background: #fee2e2;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+li button:hover {
+  background: #ef4444;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* ✨ Smooth Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+li {
+  animation: fadeIn 0.3s ease-in-out;
+}

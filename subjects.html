@@ -1,0 +1,29 @@
+
+<div class="container mx-auto p-4">
+  <h1 class="text-2xl font-bold mb-4">Manage Subjects</h1>
+
+  <!-- Add Subject Form -->
+  <form (submit)="addSubject()" class="mb-6">
+    <div class="flex items-center gap-4">
+      <input
+        type="text"
+        [(ngModel)]="newSubject"
+        name="subject"
+        placeholder="Enter new subject"
+        class="border px-3 py-2 rounded w-full"
+        required
+      />
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+        Add
+      </button>
+    </div>
+  </form>
+
+  <!-- Subject List -->
+  <ul class="space-y-2">
+    <li *ngFor="let subject of subjects" class="flex justify-between items-center bg-gray-100 p-3 rounded">
+      <span>{{ subject }}</span>
+      <button (click)="deleteSubject(subject)" class="text-red-500 hover:underline">Delete</button>
+    </li>
+  </ul>
+</div>

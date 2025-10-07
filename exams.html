@@ -1,0 +1,33 @@
+<p>exams works!</p>
+<div class="container mx-auto p-6 bg-white rounded-lg shadow-md mt-6">
+  <h1 class="text-3xl font-bold text-blue-700 mb-6 text-center">Manage Exams</h1>
+
+  <!-- Add Exam Form -->
+  <form (submit)="addExam()" class="mb-6 flex gap-3">
+    <input
+      type="text"
+      [(ngModel)]="newExam.name"
+      name="name"
+      placeholder="Exam Name"
+      class="flex-1 border px-3 py-2 rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none"
+      required
+    />
+
+    <input
+      type="date"
+      [(ngModel)]="newExam.date"
+      name="date"
+      class="border px-3 py-2 rounded-md"
+      required
+    />
+
+    <button
+      type="submit"
+      class="bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 transition duration-200"
+    >
+      Add
+    </button>
+  </form>
+
+  <!-- Exam List -->
+  <ul class="space-y-2">
