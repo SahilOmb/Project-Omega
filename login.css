@@ -1,0 +1,113 @@
+/*
+ * LOGIN CONTAINER & PAGE SETUP
+ * Centers the login box on the page and uses the background from the main dashboard CSS.
+ */
+.login-page {
+  /* Using the colors and font from your main CSS for consistency */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7fa; 
+  background-image: radial-gradient(#d3c9e6 1px, transparent 1px),
+                      radial-gradient(#d3c9e6 1px, #f7f7fa 1px); 
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+/*
+ * LOGIN FORM CARD
+ * Uses the expressive 'card' style (rounded corners, deep shadow, white background).
+ */
+.login-form-card {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px; /* Slightly softer corners for a welcoming feel */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Deep shadow for great lift */
+  width: 100%;
+  max-width: 400px; /* Constrain width for better readability */
+  text-align: center; /* Center the entire content block (h3, inputs, button) */
+  transition: transform 0.3s ease;
+}
+
+.login-form-card:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+/*
+ * HEADINGS AND TEXT
+ */
+.login-form-card h3 {
+  color: #6a0dad; /* Deep Purple */
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  text-align: left; /* Align labels left above the input fields */
+}
+
+.login-form-card p {
+    color: #9c27b0; /* Magenta-Purple for the 'login works!' message */
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+/*
+ * INPUT FIELDS
+ * Clean, accessible, and aligned with your dashboard's form aesthetic.
+ */
+.login-form-card input[type="email"],
+.login-form-card input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #c9c9d5;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  font-size: 1em;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form-card input[type="email"]:focus,
+.login-form-card input[type="password"]:focus {
+    border-color: #9c27b0; /* Focus color tied to the color scheme */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(156, 39, 176, 0.2); /* Subtle glow effect */
+}
+
+/*
+ * LOGIN BUTTON
+ * Applying the primary button style with the added sparkle effect logic.
+ */
+.login-form-card button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  
+  /* Button Styles */
+  background-color: #9c27b0; /* Magenta-Purple */
+  color: white;
+  border: none;
+  border-radius: 8px; 
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.login-form-card button[type="submit"]:hover {
+  background-color: #6a0dad; /* Deep Purple on hover */
+  transform: translateY(-2px); /* Lift */
+  box-shadow: 0 8px 20px rgba(156, 39, 176, 0.4); /* Stronger shadow on hover */
+  animation: sparkle 1s infinite alternate; /* Apply sparkle effect */
+}
+
+/* Reusing the sparkle keyframes */
+@keyframes sparkle {
+  0% { box-shadow: 0 8px 20px rgba(156, 39, 176, 0.4); } /* Base hover shadow */
+  50% { box-shadow: 0 0 8px 4px rgba(255, 255, 255, 0.4), 0 0 15px 8px rgba(156, 39, 176, 0.8); } /* Max sparkle */
+  100% { box-shadow: 0 8px 20px rgba(156, 39, 176, 0.4); }
+}
