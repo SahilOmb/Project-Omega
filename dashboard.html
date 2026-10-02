@@ -1,0 +1,18 @@
+<p>dashboard works!</p>
+<h1>User Details</h1>
+<table  border="2">
+    
+    <tr *ngFor="let u of userData">
+        <td>{{u.uid}}</td>
+         <td>{{u.username}}</td>
+          <td>{{u.email}}</td>
+           <td>{{u.password}}</td>
+           <td>{{u.address}}</td>
+            <td>{{u.mobile}}</td>
+          <td>
+              
+               <button (click)="delete(u.uid)">Delete</button>
+               <button (click)="updateeg(u.uid)">Update</button>
+         </td>
+    </tr>
+</table>

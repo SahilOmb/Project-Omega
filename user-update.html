@@ -1,0 +1,21 @@
+<p>User update works!</p>
+
+<form class="mx-1 mx-md-4" #updateData="ngForm" (ngSubmit)="updateeg(updateData)">
+
+  <label class="form-label">Your Name</label>
+  <input type="text" #username [(ngModel)]="userResp.username" name="username"><br>
+
+  <label class="form-label">Your Email</label>
+  <input type="text"#email [(ngModel)]="userResp.email" name="email"><br>
+
+  <label class="form-label">Your Address</label>
+  <input type="text" #address [(ngModel)]="userResp.address" name="address"><br>
+
+  <label class="form-label">Your Password</label>
+  <input type="text" #password [(ngModel)]="userResp.password" name="password"><br>
+
+  <label class="form-label">Your Mobile</label>
+  <input type="text" #mobile [(ngModel)]="userResp.mobile" name="mobile"><br>
+
+  <button type="submit">Update</button>
+</form>

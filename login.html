@@ -1,34 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Login - Project Omega</title>
-  <link rel="stylesheet" href="login.css">
-</head>
-<body>
-  <h2>Login to Project Omega</h2>
-  <div id="login-box">
-    <label for="username">Username</label><br>
-    <input type="text" id="username" name="username" placeholder="Enter your username"><br><br>
 
-    <label for="password">Password</label><br>
-    <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+<p>login works!</p>
+<form #logData="ngForm" (ngSubmit)="login(logData)">
+    <h3>enter name</h3>
+    <input type="text" id="userName" name="userName" #userName (ngModel)="userName"><br>
 
-    <button onclick="window.location.href='dashboard.html'">Login</button><br><br>
- 
-  </div>
-   <h2>Don't have an account ? Create Your Account !</h2>
-  <div id="register-box">
-    <label for="fullname">Full Name</label><br>
-    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+     <h3>enter email</h3>
+    <input type="email" id="email" name="email" #email (ngModel)="email"><br>
 
-    <label for="email">Email</label><br>
-    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+     <h3>enter password</h3>
+    <input type="password" id="password" name="password" #password (ngModel)="password"><br>
 
-    <label for="newpassword">Password</label><br>
-    <input type="password" id="newpassword" name="newpassword" placeholder="Create a password"><br><br>
-
-    <button onclick="window.location.href='login.html'">Register</button><br><br>
+     
+<br>
+    <input type="submit" value="Submit">
     
-</body>
-</html>
+</form>
+
+
