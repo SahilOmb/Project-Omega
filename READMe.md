@@ -1,22 +1,21 @@
+
 🧠 AI-Powered Question Paper Generator & Grader
 
-AI-Powered Question Paper Generator & Grader is an enterprise-grade, full-stack web application that leverages local Large Language Models to automate educational assessments. The system allows users to dynamically generate tailored question papers based on specific topics, difficulties, and lengths, while providing an automated, AI-driven grading engine to evaluate submitted answers with granular accuracy.
-By integrating a decoupled client-server architecture built on Java Spring Boot, Angular, and MySQL, the application connects seamlessly to a local Ollama instance orchestrating the Gemma LLM. This ensures data privacy, low-latency processing, and secure text generation without relying on costly external APIs. 🚀 🎓
+AI-Powered Question Paper Generator & Grader is an enterprise-grade, full-stack web application that leverages local Large Language Models (LLMs) to automate educational assessments. It allows users to dynamically generate tailored question papers and utilizes an AI-driven grading engine to evaluate answers with granular accuracy.
 
-🚀 Key Architectural Features
-
-• Local AI Execution Layer: Connects to Ollama locally running Gemma LLM, passing strict prompt contexts to ensure valid question schemas and objective answer scoring.
-• Automated AI Grading Engine: Evaluates descriptive textual answers against generated criteria keys, rendering context-aware, structured scoring matrices and analytical reports.
-• Dynamic PDF Distribution Engine: Compiles generated exams, analytics dashboards, and evaluation results directly into downloadable PDFs via Spring Boot service layers.
-• Robust Angular Navigation & Forms: Implements deep reactive form validation across user states (login, register, user-update) paired with an optimization-focused Server-Side Rendering (SSR) pipeline.
-
-💻 Technical Infrastructure Stack
+🚀 Tech Stack
 
 • Backend Engine: Java 17+, Spring Boot, Spring Data JPA, Hibernate, Apache Maven
-• Frontend UI Client: Angular 17+, TypeScript, RxJS, HTML5, CSS3/SCSS
-• Database Engine: MySQL Relational Database (persistent relational mapping)
-• AI Orchestration: Ollama API Gateway Instance (gemma LLM deployment models)
+• Frontend UI Client: Angular 17+ (SSR), TypeScript, RxJS, HTML5, SCSS
+• Database Engine: MySQL Relational Database
+• AI Orchestration: Ollama API Gateway (Gemma LLM deployment)
 
+✨ Features
+
+• Local AI Execution Layer: Connects to a local Ollama instance running Gemma, utilizing strict prompt schemas for data privacy and zero API costs.
+• Automated AI Grading Engine: Evaluates descriptive textual answers against generated criteria keys to produce structured scoring matrices.
+• Dynamic PDF Distribution: Compiles generated exams, analytical reports, and assessment results into downloadable PDFs via Spring Boot.
+• Robust Angular UI: Implements deep reactive form validation across user modules, optimized with a Server-Side Rendering (SSR) pipeline.
 
  📂 Project Structure
 
