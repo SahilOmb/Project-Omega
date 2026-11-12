@@ -1,7 +1,11 @@
+<div align="center">
+  <h3>🧠 Omega</h3>
+  <img src="https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2FSahilOmb%2FProject-Omega&label=Repo+Views&icon=journal-bookmark-fill&color=%23198754&message=&style=for-the-badge&tz=Asia%2FKolkata" alt="Repo Views">
+</div>
 
-🧠 AI-Powered Question Paper Generator & Grader
-
-AI-Powered Question Paper Generator & Grader is an enterprise-grade, full-stack web application that leverages local Large Language Models (LLMs) to automate educational assessments. It allows users to dynamically generate tailored question papers and utilizes an AI-driven grading engine to evaluate answers with granular accuracy.
+<br>
+<br>
+Omega is a full-stack web application that leverages local Large Language Models (LLMs) to automate educational assessments. It allows users to dynamically generate tailored question papers and utilizes an AI-driven grading engine to evaluate answers with granular accuracy.
 
 🚀 Tech Stack
 
